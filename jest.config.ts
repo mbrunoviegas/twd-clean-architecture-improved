@@ -13,16 +13,6 @@ export default {
   }),
   coveragePathIgnorePatterns: ['node_modules', '.mock.ts'],
   coverageDirectory: '<rootDir>/target/test-results/',
-  reporters: [
-    'default',
-    [
-      'jest-junit',
-      {
-        outputDirectory: './target/test-results/',
-        outputName: 'TESTS-results-jest.xml',
-      },
-    ],
-  ],
   transformIgnorePatterns: ['node_modules/'],
   preset: 'ts-jest',
 } as Config.InitialOptions;
